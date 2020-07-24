@@ -13,16 +13,14 @@ client.on('guildMemberAdd', member => {
     if (!channel) return;
     channel.send(`Bienvenido! ${member} Soy el Bot administrador del canal, si necesitas ayuda escribeme un mensaje privado con el comando /iniciar`);
     console.log(channel);
-
 })
 //Escucha nuevos mensajes de los ususarios
 client.on('message', message => {
-
     if(message.content ===  'Hola'){
-        message.channel.send(`Hola, ${message.author.first_name}! Que puedo hacer por ti?`);
+        message.channel.send(`Hola, ${message.author}! Que puedo hacer por ti?`);
     }
     if(message.content ===  'Programador'){
-        message.channel.send(`Andrew Clark. \n clark1621@gmail.com`);
+        message.channel.send('Andrew Clark. \n clark1621@gmail.com');
     }
     if(message.content ===  '/iniciar'){
         const embed = new MessageEmbed()
@@ -34,7 +32,7 @@ client.on('message', message => {
     }
     if(message.content ===  '/afiliacion'){
         const embed = new MessageEmbed()
-        .setTitle('Registro de afiliación')
+        .setTitle('Registro de afiliacion')
         .setColor(0x0000FF)
         .setDescription('Federación Venezolana de Coleo')
         .setFooter('Toca el nombre para ir al enlace')
