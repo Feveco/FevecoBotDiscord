@@ -1,19 +1,18 @@
 {
-  "name": "FevecoBotDiscord",
+  "name": "fevecobotdiscord",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "server.js",
   "dependencies": {
     "discord.js": "^12.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
