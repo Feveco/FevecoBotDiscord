@@ -16,6 +16,7 @@ client.on('guildMemberAdd', member => {
 })
 //Escucha nuevos mensajes de los ususarios
 client.on('message', message => {
+    
     if(message.content ===  'Hola'){
         message.channel.send(`Hola, ${message.author}! Que puedo hacer por ti?`);
     }
