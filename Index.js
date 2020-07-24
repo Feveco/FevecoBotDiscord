@@ -17,7 +17,7 @@ client.on('guildMemberAdd', member => {
 //Escucha nuevos mensajes de los ususarios
 client.on('message', message => {
     if(message.content ===  'Hola'){
-        message.channel.send(`Hola, ${message.author.first_name}! Que puedo hacer por ti?`);
+        message.channel.send(`Hola, ${message.author}! Que puedo hacer por ti?`);
     }
     if(message.content ===  'Programador'){
         message.channel.send('Andrew Clark. \n clark1621@gmail.com');
