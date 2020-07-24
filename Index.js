@@ -2,8 +2,8 @@ const {Client, MessageEmbed, MessageAttachment} = require('discord.js');
 const client = new Client();
 
 //Programa el evento ready
-client.once('ready', () => {
-    console.log(`Logged in as: ${client.user.tag}!`);
+client.on('ready', () => {
+    console.log(`Logged in as: ${client.user.tag}`);
     client.user.setStatus("online");
     console.log(client.user.presence.status);
 });
