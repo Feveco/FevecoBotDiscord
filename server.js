@@ -1,5 +1,10 @@
 const {Client, MessageEmbed} = require('discord.js');
 const client = new Client();
+require('dotenv').config();
+
+const config = {
+    token: process.env.TOKEN
+};
 
 //Programa el evento ready
 client.on('ready', () => {
@@ -49,4 +54,4 @@ client.on('message', async message => {
     }
 });
 
-client.login('NzM2MDY5ODE1NzAxMjA5MDk4.Xxpcbw.aLUiDZTUdfsz5yjt4ouQGl94Pto');
+client.login(config.token);
